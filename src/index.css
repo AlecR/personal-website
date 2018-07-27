@@ -1,0 +1,29 @@
+:root {
+  --main-color: #222e46;
+  --accent-color: #3E92CC;
+  --secondary-color: white;
+}
+
+html {
+  width: 100%;
+  background-color: var(--main-color);
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-family: 'Knewave', cursive;
+}
+
+body {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#root {
+  width: 100%;
+}
+
+

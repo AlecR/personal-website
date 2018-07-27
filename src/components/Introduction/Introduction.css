@@ -1,0 +1,92 @@
+.introduction-wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction-header {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.introduction-header-text-wrapper {
+  display: flex;
+  align-content: center;
+}
+
+.introduction-header p {
+  float: left;
+  font-size: 30px;
+  line-height: 30px;
+  margin-left: 30px;
+}
+
+.introduction-header button {
+  float: right;
+  margin: 20px 30px 0 0;
+}
+
+.introduction-tag-line {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 35px;
+  width: 40%;
+  font-weight: lighter;
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  padding: 20px;
+}
+
+.introduction-about-me {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+.introduction-about-me img {
+  margin: 0 auto;
+  height: 30px;
+}
+
+
+@keyframes bounce {
+  0% {bottom: 20px;}
+  50% {bottom: 40px;}
+  100% {bottom: 20px;}
+}
+
+@media all and (max-width: 1500px) { 
+  .introduction-tag-line {
+    width: 50%;
+  }
+ 
+} 
+
+@media all and (max-width: 768px) { 
+  .introduction-tag-line {
+    width: 90%;
+    font-size: 30px;
+  }
+
+  .introduction-header p {
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  .introduction-header button {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,75 @@
+:root {
+  --bar-main-color: var(--accent-color);
+  --circle-size: 40px;
+}
+
+.container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 300px;
+  width: 150px;
+  z-index: 100;
+}
+
+.progressbar {
+  list-style-type: none;
+}
+
+.progressbar-step {
+  position: relative;
+  cursor: pointer;
+}
+
+.circle {
+  width: var(--circle-size);
+  height: var(--circle-size);
+  line-height : var(--circle-size);
+  border-radius: 100%;
+  position: relative;
+  text-align: center;
+  background-color: var(--secondary-color);
+  margin: -2px auto;
+}
+
+.inner-circle {
+  height: var(--circle-size);
+  width: var(--circle-size);
+  background-color: var(--bar-main-color);
+  position: absolute;
+  border-radius: 100%;
+  margin: auto;
+}
+
+.step-line {
+  z-index: -5;
+  position: relative;
+  height: var(--circle-size);
+  width: 10px;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+}
+
+.step-inner-line {
+  background-color: var(--bar-main-color);
+  height: 100%;
+  width: 100%;
+}
+
+.step-name {
+  position: absolute;
+  right: 80%;
+  bottom: 10px;
+  rotate: 0;
+}
+
+.step-name.idle, .step-name.viewed {
+  opacity: 0.2;
+}
+
+@media all and (max-width: 768px) { 
+  .progressbar {
+    display: none;
+  }
+}   
+
