@@ -1,9 +1,10 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 import SectionWaypoint from '../SectionWaypoint';
+import SectionTitle from '../SectionTitle';
 import './Projects.css';
 
-const SmartMirrorContentOne = props => (
+const ProjectContentOne = props => (
   <div>
     <div>Independently developed and built a Smart Mirror.  The mirror is made up of modules for a variety of purposes, and the layout / modules displayed are completely configurable. Using an infrared touch frame to make the mirror touch screen, everything on the mirror can be moved and interacted with. Some of the modules include: </div>
     <ul>
@@ -17,18 +18,18 @@ const SmartMirrorContentOne = props => (
   </div>
 )
 
-const SmartMirrorContentTwo = props => (
-  <div className='project-technology-content'>
-    <div className='project-technology-content-title'>Technologies Used</div>
-    <TechnologiesList 
+const ProjectContentTwo = props => (
+  <div className='project-content-two'>
+    <div className='project__technology-content-title'>Technologies Used</div>
+    <ProjectTechnologiesList 
       title='Front End'
       technologies={['React.js', 'React Router', 'Electron', 'HTML', 'CSS']}
     />
-    <TechnologiesList 
+    <ProjectTechnologiesList 
       title='Back End'
       technologies={['Node.js', 'Express.js', 'Python', 'Bash']}
     />
-    <TechnologiesList 
+    <ProjectTechnologiesList 
       title='Tools'
       technologies={['Postman', 'npm', 'VS Code', 'ngrok', 'Chrome Dev Tools', 'Git (GitHub)']}
     />
@@ -37,26 +38,34 @@ const SmartMirrorContentTwo = props => (
 
 const Project = props => (
   <div className='project'>
-    <p className='project-title'>{props.title}</p>
-    <p className='project-subtitle'>{props.subtitle}</p>
+    <p className='project__title'>{props.title}</p>
+    <p className='project__subtitle'>{props.subtitle}</p>
     {
       props.content.map((content, index) => (
           index % 2 === 0 ? (
-            <div className='project-detail'>
-              <div className='project-detail-image'>
-                <img src={content.image} alt={`${props.title} image`} />
+            <div className='project__detail'>
+              <div className='project__detail-image-wrapper'>
+                <img 
+                  className='project__detail-image'
+                  src={content.image} 
+                  alt={`${props.title} image`} 
+                />
               </div>
-              <div className='project-detail-content'>
+              <div className='project__detail-content'>
                 {content.text}
               </div>
             </div>
           ) : (
-            <div className='project-detail reverse'>
-              <div className='project-detail-content'>
+            <div className='project__detail .project__detail-reverse'>
+              <div className='project__detail-content'>
                 {content.text}
               </div>
-              <div className='project-detail-image'>
-                <img src={content.image} alt={`${props.title} image`} />
+              <div className='project__detail-image-wrapper'>
+                <img 
+                  className='project__detail-image'
+                  src={content.image} 
+                  alt={`${props.title} image`} 
+                />
               </div>
             </div>
           )
@@ -65,13 +74,13 @@ const Project = props => (
   </div>
 )
 
-const TechnologiesList = props => (
+const ProjectTechnologiesList = props => (
   <div>
-    <div className='project-technology-list-title'>{props.title}</div>
-    <div className='project-technology-list'>
+    <div className='project-technologies-list__title'>{props.title}</div>
+    <div className='project-technologies-list__list'>
       {
         props.technologies.map(technology => (
-          <div className='project-technology-list-item'>{technology}</div>
+          <div className='project-technologies-list__list-item'>{technology}</div>
         ))
       }
     </div>
@@ -80,8 +89,8 @@ const TechnologiesList = props => (
 
 const MiniProject = props => (
   <div className='mini-project'>
-    <p className='mini-project-title'>{props.title}</p>
-    <p className='mini-project-subtitle'>{props.subtitle}</p>
+    <p className='mini-project__title'>{props.title}</p>
+    <p className='mini-project__subtitle'>{props.subtitle}</p>
     <MiniProjectTechnologiesList 
       technologies={props.technologies}
     />
@@ -90,10 +99,10 @@ const MiniProject = props => (
 
 const MiniProjectTechnologiesList = props => (
   <div>
-    <div className='project-technology-list'>
+    <div className='mini-project-technologies-list__list'>
       {
         props.technologies.map(technology => (
-          <div className='project-technology-list-item'>{technology}</div>
+          <div className='mini-project-technologies-list__list-item'>{technology}</div>
         ))
       }
     </div>
@@ -103,9 +112,11 @@ const MiniProjectTechnologiesList = props => (
 const Projects = props => (
   <Element 
     name='projects' 
-    className='projects-wrapper'
+    className='projects__wrapper'
   >
-    <p className='section-title'>Projects</p>
+    <SectionTitle
+      title='Skills'
+    />
     <div className='projects'>
       <Project 
         title="Smart Mirror"
@@ -113,11 +124,11 @@ const Projects = props => (
         content={[
           {
             image: 'images/phone.png',
-            text: <SmartMirrorContentOne />
+            text: <ProjectContentOne />
           },
           {
             image: 'images/phone.png',
-            text: <SmartMirrorContentTwo />
+            text: <ProjectContentTwo />
           }
         ]}
       />

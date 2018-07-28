@@ -63,8 +63,8 @@ class ProgressBar extends Component {
 
   render() {
     return (
-      <div className="container">
-        <ul className="progressbar">
+      <div className="progressbar__wrapper">
+        <ul className="progressbar__list">
         {
           [...Array(this.props.steps.length).keys()].map(step => {
             const name = this.props.steps[step];
@@ -76,32 +76,32 @@ class ProgressBar extends Component {
             }
             return (
               <li 
-                className='progressbar-step'
+                className='progressbar__step'
                 onClick={() => this.props.onStepClick(name.toLowerCase())}
                 onMouseEnter={() => this.setState({hoveredIndex: step})}
                 onMouseLeave={() => this.setState({hoveredIndex: null})}
               >
                 <StepName 
-                  className={`step-name ${pose}`}
+                  className={`progressbar__step-name progressbar__pose--${pose}`}
                   pose={pose}
                 >
                   {name}
                 </StepName>
                 {
                   step > 0 ? (
-                    <div className='step-line'>
+                    <div className='progressbar__step-line'>
                       <InnerLine 
-                        className='step-inner-line'
+                        className='progrssbar__step-inner-line'
                         pose={pose} 
                       />
                     </div>
                   ) : null
                 } 
                 <div 
-                  className='circle'
+                  className='progressbar__circle'
                 >
                   <InnerCircle 
-                    class='inner-circle'
+                    class='progressbar__inner-circle'
                     pose={this.state.hoveredIndex === step && step > this.props.activeStep ? 'hovered' : pose }
                   />
                 </div>

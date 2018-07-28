@@ -1,4 +1,8 @@
-.projects-wrapper {
+/** ========================== **/
+/** === Projects Component === **/
+/** ========================== **/
+
+.projects__wrapper {
   width: 100%;
   position: relative;
   display: flex;
@@ -12,6 +16,10 @@
   margin-top: 200px;
 }
 
+/** ========================= **/
+/** === Project Component === **/
+/** ========================= **/
+
 .project {
   width: 100%;
   font-size: 25px;
@@ -22,32 +30,32 @@
   margin-top: 0;
 }
 
-.project-title {
+.project__title {
   font-size: 35px;
   margin: 20px 0 0 0;
 }
 
-.project-subtitle {
+.project__subtitle {
   font-size: 18px;
   font-weight: lighter;
   margin: 0;
 }
 
-.project-detail {
+.project__detail {
   margin-top: 20px;
   display: flex;
 }
 
-.project-detail-image {
+.project__detail-image-wrapper {
   flex: 1;
 }
 
-.project-detail-image img {
+.project__detail-image {
   display: block;
   margin: 0 auto;
 }
 
-.project-detail-content {
+.project__detail-content {
   display: flex;
   flex: 1;
   align-items: center;
@@ -55,12 +63,16 @@
   font-weight: lighter;
 }
 
-.project-technology-content-title {
+.project__technology-content-title {
   font-weight: normal;
   margin-bottom: 20px;
 }
 
-.project-technology-list {
+/** ========================================= **/
+/** === ProjectTechnologiesList Component === **/
+/** ========================================= **/
+
+.project-technologies-list__list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -68,28 +80,55 @@
   border-radius: 10px;
 }
 
-.project-technology-list-title {
+.project-technologies-list__title {
   padding: 20px 0 5px 0;
 }
 
-.project-technology-list-item {
+.project-technologies-list__list-item {
   border: 1px solid white;
   margin: 5px;
   padding: 5px;
   border-radius: 5px;
 }
 
-.mini-project-title {
+/** ============================= **/
+/** === MiniProject Component === **/
+/** ============================= **/
+
+.mini-project__title {
   font-size: 35px;
   margin: 50px 0 0 0;
 
 }
 
-.mini-project-subtitle {
+.mini-project__subtitle {
   font-size: 18px;
   font-weight: lighter;
   margin: 10px 0;
 }
+
+/** ============================================= **/
+/** === MiniProjectTechnologiesList Component === **/
+/** ============================================= **/
+
+.mini-project-technologies-list__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.mini-project-technologies-list__list-item {
+  border: 1px solid white;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/** ======================= **/
+/** ==== MEDIA QUERIES ==== **/
+/** ======================= **/
 
 @media all and (max-width: 1500px) { 
   
@@ -101,20 +140,20 @@
     margin-top: 100px;
   }
 
-  .project-title {
+  .project__title {
     font-size: 25px;
     margin: 20px 0 0 0;
   }
 
-  .project-detail {
+  .project__detail {
     flex-wrap: wrap;
   }
 
-  .project-detail img {
+  .project__detail-image {
     margin-bottom: 30px;
   }
 
-  .project-detail.reverse {
+  .project__detail-reverse {
     flex-wrap: wrap-reverse;
   }
 }

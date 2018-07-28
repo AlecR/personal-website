@@ -1,4 +1,4 @@
-.introduction-wrapper {
+.introduction__wrapper {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.introduction-header {
+.introduction__header {
   position: absolute;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -16,24 +16,24 @@
   right: 0;
 }
 
-.introduction-header-text-wrapper {
+.introduction__header-text-wrapper {
   display: flex;
   align-content: center;
 }
 
-.introduction-header p {
+.introduction__header-text {
   float: left;
   font-size: 30px;
   line-height: 30px;
   margin-left: 30px;
 }
 
-.introduction-header button {
+.introduction__header-contact-button {
   float: right;
   margin: 20px 30px 0 0;
 }
 
-.introduction-tag-line {
+.introduction__tag-line {
   display: inline-block;
   vertical-align: middle;
   font-size: 35px;
@@ -44,7 +44,7 @@
   padding: 20px;
 }
 
-.introduction-about-me {
+.introduction__about-me {
   display: block;
   position: absolute;
   bottom: 20px;
@@ -55,7 +55,7 @@
   animation: bounce 2s infinite;
 }
 
-.introduction-about-me img {
+.introduction__about-me-image {
   margin: 0 auto;
   height: 30px;
 }
@@ -68,24 +68,24 @@
 }
 
 @media all and (max-width: 1500px) { 
-  .introduction-tag-line {
+  .introduction__tag-line {
     width: 50%;
   }
  
 } 
 
 @media all and (max-width: 768px) { 
-  .introduction-tag-line {
+  .introduction__tag-line {
     width: 90%;
     font-size: 30px;
   }
 
-  .introduction-header p {
+  .introduction__header-text {
     margin-left: 10px;
     font-size: 25px;
   }
 
-  .introduction-header button {
+  .introduction__header-contact-button {
     margin-right: 10px;
     font-size: 20px;
   }

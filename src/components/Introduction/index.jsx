@@ -5,27 +5,31 @@ import './Introduction.css';
 
 const Introduction = (props) => (
   <Element 
-    className='introduction-wrapper' 
+    className='introduction__wrapper' 
     name='introduction' 
   >
-    <div className='introduction-header'>
-      <div className='introduction-header-text-wrapper'>
-        <p>ALEC RODGERS</p>
+    <div className='introduction__header'>
+      <div className='introduction__header-text-wrapper'>
+        <p className='introduction__header-text'>ALEC RODGERS</p>
       </div>
-      <div className='introduction-header-image-wrapper'>
+      <div className='introduction__header-image-wrapper'>
         <button 
-          className='box-button introduction-contact-button'
+          className='box-button introduction__header-contact-button'
           onClick = {() => props.onContactClick()}
         >CONTACT</button>
       </div>
     </div>
-    <p className='introduction-tag-line'>I'm <b>Alec Rodgers</b> and I'm a student at Brandeis Unviersity studying computer science and graduating in 2020. I have a strong passion for technology and I'm currently most interested in mobile applicaiton and full stack web development. </p>
+    <p className='introduction__tag-line'>I'm <b>Alec Rodgers</b> and I'm a student at Brandeis Unviersity studying computer science and graduating in 2020. I have a strong passion for technology and I'm currently most interested in mobile applicaiton and full stack web development. </p>
     <div 
-      className='introduction-about-me'
+      className='introduction__about-me'
       onClick = {() => props.onAboutMeClick()}
     >
       <p>About Me</p>
-      <img src={'images/down-arrow.png'} alt='Down Arrow' />
+      <img 
+        className='introduction__about-me-image'
+        src={'images/down-arrow.png'} 
+        alt='Down Arrow' 
+      />
     </div>
     <SectionWaypoint 
       onScrollToWaypoint={() => props.onScrollToWaypoint(0)}
