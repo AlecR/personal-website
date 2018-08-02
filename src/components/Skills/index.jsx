@@ -74,7 +74,7 @@ const frameworksData = [
   },
   {
     src: 'images/spritekit-logo.png',
-    text: 'Spritekit'
+    text: 'SpriteKit'
   },
   {
     src: 'images/ros-logo.png',
@@ -137,7 +137,7 @@ const SkillsListItem = (props) => (
 const SkillsTable = (props) => (
   <div className='skills-table__wrapper'>
     <p className='skills-table__title'>{props.title}</p>
-    <ul className-='skills-table__list'>
+    <ul className='skills-table__list'>
       {
         props.data.map(listItem => (
           <SkillsListItem 

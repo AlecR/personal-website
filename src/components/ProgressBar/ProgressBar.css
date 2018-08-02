@@ -32,7 +32,7 @@
   margin: -2px auto;
 }
 
-.progrssbar__inner-circle {
+.progressbar__inner-circle {
   height: var(--circle-size);
   width: var(--circle-size);
   background-color: var(--bar-main-color);
@@ -67,7 +67,7 @@
   opacity: 0.2;
 }
 
-@media all and (max-width: 768px) { 
+@media all and (max-width: 1000px) { 
   .progressbar__wrapper {
     display: none;
   }

@@ -1,5 +1,4 @@
 .skills__wrapper {
-  min-height: 100vh;
   width: 100%;
   position: relative;
 }
@@ -12,25 +11,25 @@
 }
 
 .skills__tables {
-  width: 70%;
-  display: flex;
-  flex-direction: row;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center;
 }
 
 /** ===================== **/
 /** SkillsTable Component **/
 /** ===================== **/
 
-.skills-table__wrapper {
-  width: 100%;
-}
-
 .skills-table__title {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .skills-table__list {
   list-style-type: none;
+  padding-left: 10px;
+  min-width: 210px;
 }
 
 /** ======================== **/
@@ -57,17 +56,17 @@
 /** ==== MEDIA QUERIES ==== **/
 /** ======================= **/
 
-@media all and (max-width: 1500px) { 
+@media all and (max-width: 1000px) { 
   .skills__tables {
-    flex-direction: row;
-    width: 70%
+    width: 90%;
   }
 } 
 
 @media all and (max-width: 768px) { 
   .skills__tables {
-    width: 70%;
+    width: 85%;
     flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .skills__table {

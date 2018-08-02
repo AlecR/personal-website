@@ -101,7 +101,7 @@ class ProgressBar extends Component {
                   className='progressbar__circle'
                 >
                   <InnerCircle 
-                    class='progressbar__inner-circle'
+                    className='progressbar__inner-circle'
                     pose={this.state.hoveredIndex === step && step > this.props.activeStep ? 'hovered' : pose }
                   />
                 </div>
