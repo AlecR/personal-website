@@ -128,12 +128,12 @@ const Projects = props => (
       />
       <MiniProject 
         title='Lookout'
-        subtitle='Worked as an Engineering Intern at Lookout for two summers (2017 and 2018) as a member of the iOS team. During my first summer at Lookout, I worked on implementing a new feature, Breach Report, into a newly architected version of the application. In my second summer, I worked on yet another new version of the application, focusing on integrating new features and completely updaying the user interface.'
+        subtitle='Worked as an Engineering Intern at Lookout for two summers (2017 and 2018) as a member of the iOS team. During my first summer at Lookout, I worked on implementing a new feature, Breach Report, into a newly architected version of the application. In my second summer, I worked on yet another new version of the application, focusing on integrating new features and completely updating the user interface.'
         technologies={['Cocoa Touch', 'Swift', 'Cocoapods', 'Gerrit Code Review', 'JIRA', 'Jenkins', 'Git / GitHub']}
       />
       <MiniProject 
         title='Drop The Ball'
-        subtitle='iOS application built with SpriteKit. Drop the Ball was built with SpriteKit and featured 100 levels. The game was designed to be simple, with the objective being to drop a ball into a moving cup at the bottom of the screen, getting through a variety of different obstacles.'
+        subtitle='iOS application built with SpriteKit. Drop the Ball was a game developed with Cocoa Touch and SpriteKit, featuring 100 different levels. The game was designed to be simple, with the objective being to drop a ball into a moving cup at the bottom of the screen, getting through a variety of obstacles. The app was published and is currently available on the App Store.'
         technologies={['Cocoa Touch', 'Swift', 'Spritekit', 'Cocoapods']}
       />
       <MiniProject 
