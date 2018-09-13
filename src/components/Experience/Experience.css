@@ -1,0 +1,56 @@
+.experience__wrapper {
+  position: relative;
+}
+
+.experience__list {
+  width: 55%;
+  margin: 0 auto;
+}
+
+/** ===================== **/
+/** === Job Component === **/
+/** ===================== **/
+
+.job__wrapper {
+  padding-top: 50px;
+}
+
+.job__wrapper:first-child {
+  padding-top: 0;
+}
+
+.job__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.job__date {
+  text-align: right;
+  margin: auto 0;
+}
+
+.job__title {
+  font-size: 30px;
+}
+
+.job__company-wrapper {
+  padding-top: 5px;
+  display: grid;
+  grid-template-columns: 30px auto;
+}
+
+.job__company-logo {
+  height: 25px;
+  width: auto;
+}
+
+.job__company-name {
+  font-size: 20px;
+  margin: auto 0;
+}
+
+.job__description {
+  padding-top: 20px;
+  font-weight: lighter;
+  padding-bottom: 10px;
+}

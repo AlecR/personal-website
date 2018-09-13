@@ -104,25 +104,6 @@
   margin: 10px 0;
 }
 
-/** ============================================= **/
-/** === MiniProjectTechnologiesList Component === **/
-/** ============================================= **/
-
-.mini-project-technologies-list__list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  border-radius: 10px;
-}
-
-.mini-project-technologies-list__list-item {
-  border: 1px solid white;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 5px;
-}
-
 /** ======================= **/
 /** ==== MEDIA QUERIES ==== **/
 /** ======================= **/

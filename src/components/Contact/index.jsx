@@ -81,7 +81,7 @@ class Contact extends Component {
           </form>
         </div>
         <SectionWaypoint 
-          onScrollToWaypoint={() => this.props.onScrollToWaypoint(3)}
+          onScrollToWaypoint={() => this.props.onScrollToWaypoint(4)}
         />
       </Element>
     )
