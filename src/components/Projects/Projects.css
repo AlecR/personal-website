@@ -94,8 +94,7 @@
 
 .mini-project__title {
   font-size: 35px;
-  margin: 50px 0 0 0;
-
+  margin: 0 20px 0 0;
 }
 
 .mini-project__subtitle {
@@ -104,23 +103,19 @@
   margin: 10px 0;
 }
 
-/** ============================================= **/
-/** === MiniProjectTechnologiesList Component === **/
-/** ============================================= **/
-
-.mini-project-technologies-list__list {
+.mini-project__header {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  border-radius: 10px;
+  margin-top: 50px;
 }
 
-.mini-project-technologies-list__list-item {
-  border: 1px solid white;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 5px;
+.mini-project__link-image {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5px;
 }
 
 /** ======================= **/

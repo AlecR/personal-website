@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import Introduction from './components/Introduction';
 import Skills from './components/Skills';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ProgressBar from './components/ProgressBar';
-import { scroller, scrollSpy } from 'react-scroll';
+import { scroller } from 'react-scroll';
 
 import './App.css';
 
@@ -37,7 +38,7 @@ class App extends Component {
     return (
       <div className='app'>
         <ProgressBar
-          steps={['Introduction', 'Skills', 'Projects', 'Contact']}
+          steps={['Introduction', 'Skills', 'Experience', 'Projects', 'Contact']}
           activeStep={this.state.activeStep}
           onStepClick={this.scrollToStep}
         />
@@ -47,6 +48,9 @@ class App extends Component {
           onScrollToWaypoint={this.setActiveStep}
         />
         <Skills  
+          onScrollToWaypoint={this.setActiveStep}
+        />
+        <Experience
           onScrollToWaypoint={this.setActiveStep}
         />
         <Projects 
