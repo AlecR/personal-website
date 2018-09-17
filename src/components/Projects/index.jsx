@@ -87,7 +87,7 @@ const Projects = props => (
             image: 'images/github-logo.png'
           }
         ]}
-        subtitle='Web applcation built as part of a team of 4 for my Capstone Project for Software Engineering course. The premise of the website was a place where content creators can go to advertise their work and find clients to complete work for.'
+        subtitle='Web application built as part of a team of 4 for my Capstone Project for Software Engineering course. The premise of the website was a place where content creators can go to advertise their work and find clients to complete work for.'
         technologies={['Ruby on Rails', 'Elasticsearch', 'Pusher', 'Paperclip + AWS']}
       />
       <MiniProject 
@@ -98,7 +98,7 @@ const Projects = props => (
             image: 'images/github-logo.png'
           }
         ]}
-        subtitle='A robot built for my Autonomous Robotics class. The Campus Rover was designed to map and autonomously navigate around campus. The project was split up amongst the class, and my primary foucs was autonomous navigation and remote operation of the robot. As a member of the team, I developed a web application which allowed users to connect to the server running on the robot and remotely control it, either by providing a waypoint and autonomously navigating or manually driving.'
+        subtitle='A robot built for my Autonomous Robotics class. The Campus Rover was designed to map and autonomously navigate around campus. The project was split up amongst the class, and my primary focus was autonomous navigation and remote operation of the robot. As a member of the team, I developed a web application which allowed users to connect to the server running on the robot and remotely control it, either by providing a waypoint and autonomously navigating or manually driving.'
         technologies={['Robotics Operating System (ROS)', 'Python', 'Javascript', 'React', 'SLAM Algorithim']}
       />
       <MiniProject 
