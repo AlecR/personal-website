@@ -19,7 +19,7 @@ const Introduction = (props) => (
         >CONTACT</button>
       </div>
     </div>
-    <p className='introduction__tag-line'>I'm <b>Alec Rodgers</b> and I'm a student at Brandeis Unviersity studying computer science and graduating in 2020. I have a strong passion for technology and I'm currently most interested in mobile applicaiton and full stack web development. </p>
+    <p className='introduction__tag-line'>I'm <b>Alec Rodgers</b> and I'm a student at Brandeis Unviersity studying computer science and graduating in 2020. I have a strong passion for technology and I'm currently most interested in mobile application and full stack web development. </p>
     <div 
       className='introduction__about-me'
       onClick = {() => props.onAboutMeClick()}
