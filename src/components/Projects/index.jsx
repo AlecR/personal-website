@@ -99,7 +99,7 @@ const Projects = props => (
           }
         ]}
         subtitle='A robot built for my Autonomous Robotics class. The Campus Rover was designed to map and autonomously navigate around campus. The project was split up amongst the class, and my primary focus was autonomous navigation and remote operation of the robot. As a member of the team, I developed a web application which allowed users to connect to the server running on the robot and remotely control it, either by providing a waypoint and autonomously navigating or manually driving.'
-        technologies={['Robotics Operating System (ROS)', 'Python', 'Javascript', 'React', 'SLAM Algorithim']}
+        technologies={['Robotics Operating System (ROS)', 'Python', 'JavaScript', 'React', 'SLAM Algorithim']}
       />
       <MiniProject 
         title='Hacker News Twitter Bot'

@@ -7,7 +7,7 @@ import './Skills.css';
 const languagesData = [
   {
     src: 'images/javascript-logo.png',
-    text: 'Javascript'
+    text: 'JavaScript'
   },
   {
     src: 'images/swift-logo.png',
