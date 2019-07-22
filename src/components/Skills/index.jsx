@@ -18,6 +18,10 @@ const languagesData = [
     text: 'Python'
   },
   {
+    src: 'images/scala-logo.png',
+    text: 'Scala'
+  },
+  {
     src: 'images/ruby-logo.png',
     text: 'Ruby'
   },
@@ -51,6 +55,10 @@ const frameworksData = [
   {
     src: 'images/node-logo.png',
     text: 'Node.js'
+  },
+  {
+    src: 'images/spark-logo.png',
+    text: 'Apache Spark'
   },
   {
     src: 'images/express-logo.png',
@@ -88,8 +96,8 @@ const toolsData = [
     text: 'Git / GitHub'
   },
   {
-    src: 'images/chrome-logo.png',
-    text: 'Chrome Dev Tools'
+    src: 'images/aws-logo.png',
+    text: 'Amazon Web Services'
   },
   {
     src: 'images/npm-logo.png',
@@ -110,6 +118,10 @@ const toolsData = [
   {
     src: 'images/xcode-logo.png',
     text: 'Xcode'
+  },
+  {
+    src: 'images/chrome-logo.png',
+    text: 'Chrome Dev Tools'
   },
   {
     src: 'images/cocoapods-logo.png',

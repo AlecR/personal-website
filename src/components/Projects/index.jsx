@@ -43,6 +43,21 @@ const Projects = props => (
     />
     <div className='projects__grid'>
       <MiniProject 
+        title='Bang Links'
+        links= {[
+          {
+            url: 'https://github.com/AlecR/bang-links',
+            image: 'images/github-logo.png'
+          },
+          {
+            url: 'https://chrome.google.com/webstore/detail/bang-links/cgjkfgaebafenkbcgdjkiplhcjngcoca',
+            image: 'images/chrome-logo-white.png'
+          }
+        ]}
+        subtitle='Chrome extension for custom URL shortcuts utilizing the Google Chrome Omnibox API. After creating a shortcut, typing "! <shortcut name>" will navigate to your specified URL.'
+        technologies={['React.js', 'Node.js','yarn', 'Chrome Dev Tools', 'Git / GitHub']}
+      />
+      <MiniProject 
         title='Smart Mirror'
         links= {[
           {
