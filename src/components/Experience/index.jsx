@@ -12,7 +12,7 @@ const Experience = (props) => (
       <Job
         company="Thumbtack"
         title="Software Engineering Intern"
-        date="May 2019 - Aug 2019"
+        date="May 2019 - August 2019"
         logo="images/thumbtack-logo.png"
         description={[
           "Wrote Scala scripts to automate the nightly aggregation of millions of data points into metrics measuring Thumbtack pro’s performance.",
