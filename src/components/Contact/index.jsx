@@ -46,7 +46,7 @@ class Contact extends Component {
           <form
             className="contact__form"
             method="POST"
-            action="https://formspree.io/f/alecr1997@gmail.com"
+            action="https://formspree.io/f/xwkaakrz"
           >
             <label className="contact__form-field">
               <p className="contact__form-field-text">Name</p>

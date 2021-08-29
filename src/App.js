@@ -26,7 +26,7 @@ class App extends Component {
   };
 
   handleAboutMeClick = () => {
-    this.scrollToStep("skills");
+    this.scrollToStep("experience");
   };
 
   handleContactClick = () => {
@@ -39,8 +39,8 @@ class App extends Component {
         <ProgressBar
           steps={[
             "Introduction",
-            "Skills",
             "Experience",
+            "Skills",
             "Projects",
             "Contact",
           ]}

@@ -21,7 +21,7 @@ const Experience = (props) => (
         />
       ))}
     </div>
-    <SectionWaypoint onScrollToWaypoint={() => props.onScrollToWaypoint(2)} />
+    <SectionWaypoint onScrollToWaypoint={() => props.onScrollToWaypoint(1)} />
   </Element>
 );
 

@@ -162,7 +162,7 @@ const Skills = (props) => (
         <SkillsTable title="Tools" data={toolsData} />
       </div>
     </div>
-    <SectionWaypoint onScrollToWaypoint={() => props.onScrollToWaypoint(1)} />
+    <SectionWaypoint onScrollToWaypoint={() => props.onScrollToWaypoint(2)} />
   </Element>
 );
 
