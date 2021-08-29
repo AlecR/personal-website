@@ -1,0 +1,93 @@
+[
+  {
+    "company": "proton.ai",
+    "date": "October 2019 - Current",
+    "title": "Lead Engineer",
+    "logo": "images/proton-logo.png",
+    "bullets": [
+      "One of the earliest engineers to join the company. Contributed to building a scalable platform which has enabled us to 5x our customer base over the span of 2 years.",
+      "Developing core backend features for the proton.ai web application using Python with Elasticsearch and Redis. Deploying features with Docker and Kubernetes.",
+      "Led a team which planned, developed, and launched the proton.ai mobile app with React Native. Successfully launched to a client with 500 users in just 3 months.",
+      "Responsible for managing a team of 4 engineers. Responsibilities include leading sprint planning and prioritization, providing guidance on technical tasks, and coordinating large projects with the broader product team."
+    ],
+    "technologies": [
+      "Python",
+      "Elasticsearch",
+      "Redis",
+      "Airflow",
+      "Javascript",
+      "React Native",
+      "Google Cloud Platform",
+      "Docker",
+      "Kubernetes",
+      "Go",
+      "Git / GitHub"
+    ]
+  },
+  {
+    "company": "Thumbtack",
+    "date": "May 2019 - August 2019",
+    "title": "Software Engineering Intern",
+    "logo": "images/thumbtack-logo.png",
+    "bullets": [
+      "Wrote Scala scripts to automate aggregating millions of data points into metrics measuring the performance of Thumbtack pros. Deployed the scripts with Apache Airflow to run nightly.",
+      "Integrated new performance metrics on Thumbtack’s Pro Insights page to allow pros to compare their performance versus top pros. Used JavaScript with React on the frontend and PHP on the backend.",
+      "Inherited a full stack project from a departing team member to complete and launch a new feature on the Thumbtack website. Wrote Scala scripts with Apache Spark to aggregate data and implemented the feature into the website’s backend. Completed the project."
+    ],
+    "technologies": [
+      "Javascript",
+      "React",
+      "Scala",
+      "PHP",
+      "Apache Spark",
+      "Apache Thrift",
+      "AWS",
+      "Postgres",
+      "Google Dataproc",
+      "Git / GitHub",
+      "JIRA",
+      "Gerrit"
+    ]
+  },
+  {
+    "company": "Brandeis University",
+    "date": "August 2018 - May 2019",
+    "title": "Robotics Lab Manager",
+    "logo": "images/brandeis-logo.png",
+    "bullets": [
+      "Contributed to the major project of Brandeis Robotics, the Campus Rover - a robot which was designed to deliver packages autonomously on campus. Work primiarily consisted of using ROS to develop autonomous navigation algorithims.",
+      "Ensuring cirriculum was appropriate for students in the Autonomous Robotics course.",
+      "Provided assistance to students on programming assignments."
+    ],
+    "technologies": [
+      "ROS",
+      "Python",
+      "Linux (Ubuntu)",
+      "Raspberry Pi",
+      "Arduino",
+      "SLAM Algorithm",
+      "Autonomous Navigation",
+      "Git / GitHub"
+    ]
+  },
+  {
+    "company": "Lookout",
+    "date": "Summer 2017 & Summer 2018",
+    "title": "Software Engineering Intern",
+    "logo": "images/lookout-logo.png",
+    "bullets": [
+      "Member of the client iOS team for two summers.",
+      "Developed Breach Report feature using Swift as part of an initiative to rearchitect the codebase for creating white label applications.",
+      "Contributed to the development of a white label application with a delivery deadline of only 5 weeks."
+    ],
+    "technologies": [
+      "Cocoa Touch",
+      "Swift",
+      "Cocoapods",
+      "Gerrit Code Review",
+      "JIRA",
+      "Jenkins",
+      "Git / GitHub"
+    ]
+  }
+]
