@@ -16,6 +16,21 @@
   right: 0;
 }
 
+.introduction__link {
+  color: black;
+  text-decoration: none;
+}
+
+.introduction__link:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.introduction__link:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
 .introduction__header-text-wrapper {
   display: flex;
   align-content: center;
@@ -60,21 +75,25 @@
   height: 30px;
 }
 
-
 @keyframes bounce {
-  0% {bottom: 20px;}
-  50% {bottom: 40px;}
-  100% {bottom: 20px;}
+  0% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 40px;
+  }
+  100% {
+    bottom: 20px;
+  }
 }
 
-@media all and (max-width: 1500px) { 
+@media all and (max-width: 1500px) {
   .introduction__tag-line {
     width: 50%;
   }
- 
-} 
+}
 
-@media all and (max-width: 768px) { 
+@media all and (max-width: 768px) {
   .introduction__tag-line {
     width: 90%;
     font-size: 30px;

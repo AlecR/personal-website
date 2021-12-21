@@ -19,8 +19,15 @@ const Introduction = (props) => (
       </div>
     </div>
     <p className="introduction__tag-line">
-      I'm <b>Alec Rodgers</b> and I'm currently a Lead Engineer at proton.ai. I
-      have a strong passion for technology and building scalable systems to
+      I'm <b>Alec Rodgers</b> and I'm currently a Software Engineer at{" "}
+      <a
+        className="introduction__link"
+        href="https://secureframe.com"
+        target="_blank"
+      >
+        Secureframe
+      </a>
+      . I have a strong passion for technology and building scalable systems to
       solve interesting problems with software. Scroll down to learn more about
       me and my experience.
     </p>
